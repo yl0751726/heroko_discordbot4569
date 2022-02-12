@@ -35,7 +35,7 @@ async def on_message(message):
             await message.reply(remessage) 
      
      if content== '應該':
-            await message.reply('有自信點 把應該去掉')
+            await message.reply(有自信點 把應該去掉)
             
 # Bot起動
 client.run(TOKEN)
