@@ -34,6 +34,7 @@ async def on_message(message):
             remessage = translator.translate(content, dest='zh-tw').text
             await message.reply(remessage) 
         
-        if content == 
+        if content == '應該'
+           await message.reply(有自信點 把應該去掉)
 # Bot起動
 client.run(TOKEN)
