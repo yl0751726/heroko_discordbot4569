@@ -38,5 +38,6 @@ async def on_message(message):
          msg = ('有自信點 把應該去掉')
          await send_message(msg)    
         
+        
 # Bot起動
 client.run(TOKEN)
