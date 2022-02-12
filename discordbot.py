@@ -18,7 +18,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     # 送信者為Bot時無視
-    if message.author.bot:
+    if message.author == client.user:
         return
         
     if client.user in message.mentions: # @判定
