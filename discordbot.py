@@ -34,9 +34,15 @@ async def on_message(message):
             remessage = translator.translate(content, dest='zh-tw').text
             await message.reply(remessage) 
             
-     if message.content.includes('應該'):
-         msg = ('有自信點 把應該去掉')
-         await send_message(msg)    
+@client.event
+async def on_message(message):
+    # 送信者為Bot時無視
+    if message.author == client.user:
+        return
+    
+    if message.content.includes('應該'):
+        msg = ('有自信點 把應該去掉')
+        await send_message(msg)    
         
         
 # Bot起動
