@@ -21,9 +21,6 @@ async def on_message(message):
     if message.author.bot:
         return
     
-    if content == '應該':
-         message.reply(有自信點 把應該去掉)
-    
     if client.user in message.mentions: # @判定
         translator = googletrans.Translator()
         robotName = client.user.name
