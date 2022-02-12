@@ -35,7 +35,8 @@ async def on_message(message):
             await message.reply(remessage) 
             
      if message.content.includes('應該'):
-         msg = '有自信點 把應該去掉'
+         msg = ('有自信點 把應該去掉')
          await send_message(msg)    
+        
 # Bot起動
 client.run(TOKEN)
