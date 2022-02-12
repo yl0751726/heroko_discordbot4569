@@ -34,7 +34,7 @@ async def on_message(message):
             remessage = translator.translate(content, dest='zh-tw').text
             await message.reply(remessage) 
             
-     if message.content == ('應該'):
+     if message.content.includes('應該'):
         msg = '有自信點 把應該去掉'
         await client.send_message(msg)
         
